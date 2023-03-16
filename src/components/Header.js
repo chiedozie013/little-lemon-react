@@ -1,1 +1,4 @@
-return <header></header>;
+function Header() {
+  return <header></header>;
+}
+export default Header;

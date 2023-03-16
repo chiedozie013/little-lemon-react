@@ -1,25 +1,29 @@
-return (
-  <nav>
-    <img />
-    <ul>
-      <li>
-        <a>Home</a>
-      </li>
-      <li>
-        <a>About</a>
-      </li>
-      <li>
-        <a>Menu</a>
-      </li>
-      <li>
-        <a>Reservations</a>
-      </li>
-      <li>
-        <a>Order ONline</a>
-      </li>
-    </ul>
-    <li>
-      <a>Login</a>
-    </li>
-  </nav>
-);
+function Nav() {
+  return (
+    <nav>
+      <img alt="" />
+      <ul>
+        <li>
+          <a>Home</a>
+        </li>
+        <li>
+          <a>About</a>
+        </li>
+        <li>
+          <a>Menu</a>
+        </li>
+        <li>
+          <a>Reservations</a>
+        </li>
+        <li>
+          <a>Order Online</a>
+        </li>
+        <li>
+          <a>Login</a>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Nav;
