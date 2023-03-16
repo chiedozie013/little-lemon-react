@@ -14,8 +14,22 @@ nav ul {
   gap: 20px;
 }
 
+@media screen and (max-width: 500px) {
+  nav ul {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
 footer {
   display: flex;
   flex-direction: row;
   gap: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    gap: 2px;
+  }
 }
