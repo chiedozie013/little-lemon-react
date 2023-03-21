@@ -7,12 +7,14 @@
   width: 10em;
 }
 
+/* NAVIGATION */
+
 nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 2em;
-  gap: 10rem;
+  gap: 10%;
 }
 
 .nav-list {
@@ -35,13 +37,15 @@ a {
   }
 }
 
+/* HEADER */
+
 .header {
   background-color: #495e57;
 }
 
 .header-sec {
   width: 15rem;
-  padding: 1em 0 3em 24em;
+  padding: 1em 0 3em 22em;
 }
 
 .header-sec h1 {
@@ -64,13 +68,60 @@ a {
   width: 15em;
   border-radius: 20px;
   margin-top: -17em;
-  margin-left: 58em;
+  margin-left: 59em;
 }
 
 .header-col {
-  color: #ffffff;
+  color: #edefee;
 }
 
+/* MAIN */
+
+.main-button {
+  background-color: #f4ce14;
+  font-weight: bold;
+  padding: 0em 3em;
+  border-style: none;
+  border-radius: 1em;
+}
+
+.main-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 14%;
+  margin-top: 3em;
+}
+
+.main-heading h1 {
+  font-size: 3em;
+}
+
+.menu {
+  width: 12em;
+  background-color: #edefee;
+  padding: 0 1.5em 2em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.menu img {
+  width: 15.5em;
+  margin-left: -2em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+span {
+  margin-left: 5em;
+}
+
+.menu p {
+  font-size: 12px;
+}
+.menu a {
+  font-weight: bold;
+}
 footer {
   display: flex;
   flex-direction: row;
