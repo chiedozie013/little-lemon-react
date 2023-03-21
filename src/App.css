@@ -89,8 +89,9 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 14%;
-  margin-top: 3em;
+  gap: 12%;
+  margin-top: 5em;
+  margin-bottom: 3em;
 }
 
 .main-heading h1 {
@@ -106,8 +107,8 @@ a {
 }
 
 .menu img {
-  width: 15.5em;
-  margin-left: -2em;
+  width: 15em;
+  margin-left: -1.5em;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
@@ -118,9 +119,17 @@ span {
 
 .menu p {
   font-size: 12px;
+  margin: 3em 0;
 }
 .menu a {
   font-weight: bold;
+}
+
+.menu-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
 }
 footer {
   display: flex;
