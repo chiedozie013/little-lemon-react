@@ -25,24 +25,28 @@ function Main() {
         <div className="menu">
           <img src={bruchetta} alt="Bruchetta" />
           <h5>
-            Bruchetta <span>$5.89</span>
+            Bruchetta <span className="span2">$5.89</span>
           </h5>
           <p>
             Our Bruchetta is made from grilled bread that has been smeared with
-            garlic and seasoned with salt and olive oil.
+            garlic and seasoned with salt and olive oil from the very best and
+            prepared aright.
           </p>
           <a href="Order">Order a delivery</a>
         </div>
         <div className="menu">
           <img src={greek} alt="Greek Salad" />
           <h5>
-            Lemon Dessert <span>$5.00</span>
+            Lemon Dessert <span className="span3">$5.00</span>
           </h5>
           <p>
             This comes straight from grandma's recipe book, every last
-            indredient has been courced and is as authentic as can be imagined.
+            indredient has been sourced and is as authentic as can be imagined
+            only for your pleasure.
           </p>
-          <a href="Order">Order a delivery</a>
+          <a href="Order" className="order-main">
+            Order a delivery
+          </a>
         </div>
       </div>
     </main>
