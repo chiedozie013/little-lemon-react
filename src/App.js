@@ -1,18 +1,14 @@
+import { Link } from "react-router-dom";
 import React from "react";
-import Header from "./components/Header.js";
-import Footer from "./components/Footer";
-import Main from "./components/Main";
-
-import "./App.css";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <div>
+      <h1> i am</h1>
+      <nav>
+        <Link to="/">Home</Link>
+      </nav>
+    </div>
   );
 }
-
 export default App;
