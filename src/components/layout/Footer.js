@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import footerLogo from "../../images/logo-vertical-white.png";
 import classes from "./Footer.module.css";
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -25,6 +30,23 @@ export default function Footer() {
             </li>
             <div>
               <h5>SOCIAL MEDIA</h5>
+              <menu>
+                <li>
+                  <a href="www.facebookcom">
+                    <fontAwesomeIcon icon={faFacebook} />
+                  </a>
+                </li>
+                <li>
+                  <a href="www.twitter.com">
+                    <fontAwesomeIcon icon={faTwitter} />
+                  </a>
+                </li>
+                <li>
+                  <a href="www.instagram.com">
+                    <fontAwesomeIcon icon={faInstagram} />
+                  </a>
+                </li>
+              </menu>
             </div>
           </menu>
         </div>
