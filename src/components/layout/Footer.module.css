@@ -5,3 +5,8 @@
 .footer {
   background-color: var(--color-primary-500);
 }
+
+p,
+h5 {
+  color: #fff;
+}
