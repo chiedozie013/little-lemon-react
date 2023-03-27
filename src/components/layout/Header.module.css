@@ -1,0 +1,24 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: var(--z-header);
+  background-color: var(--color-white);
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo img {
+  width: 15rem;
+}
+
+.mainNavigation menu {
+  display: flex;
+  gap: 1.5rem;
+}

@@ -1,0 +1,7 @@
+.footerLogo img {
+  margin-top: 15rem;
+  width: 7rem;
+}
+.footer {
+  background-color: var(--color-primary-500);
+}

@@ -1,16 +1,15 @@
 import { BrowserRouter as Router } from "react-router-dom";
-import { Link } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
 import React from "react";
+
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
-    <Router basement="/my-app">
-      <div>
-        <h1> i am</h1>
-        <nav>
-          <Link to="/path/to/destination">Click me!</Link>
-        </nav>
-      </div>
+    <Router>
+      <Header />
+      <Footer />
     </Router>
   );
 }
