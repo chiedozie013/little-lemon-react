@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import footerLogo from "../../images/logo-vertical-white.png";
 import classes from "./Footer.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faInstagram,
@@ -22,35 +23,46 @@ export default function Footer() {
             </li>
             <li>
               <p>Give us a call</p>
-              <a>tel: 123-456-7890</a>
+              <p>tel: 123-456-7890</p>
             </li>
             <li>
               <p>Write us a mail</p>
               <a href="malito:info@little-lemon.com"></a>
             </li>
-            <div>
-              <h5>SOCIAL MEDIA</h5>
-              <menu>
-                <li>
-                  <a href="www.facebookcom">
-                    <fontAwesomeIcon icon={faFacebook} />
-                  </a>
-                </li>
-                <li>
-                  <a href="www.twitter.com">
-                    <fontAwesomeIcon icon={faTwitter} />
-                  </a>
-                </li>
-                <li>
-                  <a href="www.instagram.com">
-                    <fontAwesomeIcon icon={faInstagram} />
-                  </a>
-                </li>
-              </menu>
-            </div>
           </menu>
         </div>
-        <Link className={classes.footer}>Home</Link>;
+        <div>
+          <h5>SOCIAL MEDIA</h5>
+          <menu>
+            <li>
+              <a href="www.facebookcom">
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  size="2x"
+                  style={{ color: "#fff" }}
+                />
+              </a>
+            </li>
+            <li>
+              <a href="www.twitter.com">
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  size="2x"
+                  style={{ color: "#fff" }}
+                />
+              </a>
+            </li>
+            <li>
+              <a href="www.instagram.com">
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  size="2x"
+                  style={{ color: "#fff" }}
+                />
+              </a>
+            </li>
+          </menu>
+        </div>
       </div>
     </footer>
   );

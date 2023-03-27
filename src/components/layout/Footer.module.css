@@ -1,6 +1,5 @@
 .footerLogo img {
-  margin-top: 15rem;
-  width: 7rem;
+  width: 5rem;
 }
 .footer {
   background-color: var(--color-primary-500);
@@ -9,4 +8,14 @@
 p,
 h5 {
   color: #fff;
+}
+.footer {
+  align-content: center;
+}
+.footerContainer {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: space-between;
+  /* align-content: center; */
+  /* justify-content: center; */
 }
