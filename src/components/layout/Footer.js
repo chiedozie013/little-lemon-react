@@ -14,17 +14,20 @@ export default function Footer() {
         <div className={classes.footerLogo}>
           <img src={footerLogo} alt="Footer-Logo" />
         </div>
-        <div>
-          <h5>CONTACTt</h5>
+        <div className={classes.footerContact}>
+          <h3>CONTACTt</h3>
           <menu>
             <li>
               <p>No 35 Jamaica steet, New York, USA</p>
             </li>
             <li>
-              <p>Give us a call</p>
-              <p>tel: 123-456-7890</p>
+              <p>123-456-7890</p>
+              <a className={classes.anchor} href="tel:123-456-7890">
+                Give us a call
+              </a>
             </li>
             <li>
+              <p>info@little-lemon.com</p>
               <a className={classes.anchor} href="malito:info@little-lemon.com">
                 Write us a mail
               </a>
@@ -32,7 +35,7 @@ export default function Footer() {
           </menu>
         </div>
         <div>
-          <h5>SOCIAL MEDIA</h5>
+          <h3 className={classes.socials}>SOCIAL MEDIA</h3>
           <menu>
             <li>
               <a href="www.facebookcom">

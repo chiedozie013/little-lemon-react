@@ -6,9 +6,9 @@
 }
 
 p,
-h5,
-.anchor {
+h3 {
   color: #fff;
+  margin-bottom: -0.5rem;
 }
 .footer {
   align-content: center;
@@ -17,6 +17,21 @@ h5,
   margin-top: 20rem;
   display: flex;
   justify-content: space-between;
-  padding: 5rem 0;
-  /* align-content: center; */
+  padding: 2rem 0;
+  align-items: center;
+}
+
+.footerContact {
+  display: flex;
+  flex-direction: column;
+}
+
+.anchor {
+  color: #fff;
+  top: 4rem;
+  text-decoration: underline;
+}
+
+.socials {
+  margin-bottom: 1.5rem;
 }
