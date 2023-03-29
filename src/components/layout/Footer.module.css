@@ -35,3 +35,7 @@ h3 {
 .socials {
   margin-bottom: 1.5rem;
 }
+
+a:hover {
+  color: var(--color-accent-500);
+}
