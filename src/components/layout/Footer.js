@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import footerLogo from "../../images/logo-vertical-white.png";
 import classes from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,8 +25,9 @@ export default function Footer() {
               <p>tel: 123-456-7890</p>
             </li>
             <li>
-              <p>Write us a mail</p>
-              <a href="malito:info@little-lemon.com"></a>
+              <a className={classes.anchor} href="malito:info@little-lemon.com">
+                Write us a mail
+              </a>
             </li>
           </menu>
         </div>

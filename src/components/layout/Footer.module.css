@@ -6,7 +6,8 @@
 }
 
 p,
-h5 {
+h5,
+.anchor {
   color: #fff;
 }
 .footer {
@@ -16,6 +17,6 @@ h5 {
   margin-top: 20rem;
   display: flex;
   justify-content: space-between;
+  padding: 5rem 0;
   /* align-content: center; */
-  /* justify-content: center; */
 }
