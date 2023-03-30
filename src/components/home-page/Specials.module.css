@@ -1,0 +1,10 @@
+.specialsSection {
+  padding: 7rem 0 7rem 0;
+}
+
+.specialsMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

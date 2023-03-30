@@ -5,8 +5,7 @@
   background-color: var(--color-primary-500);
 }
 
-p,
-h3 {
+.cont {
   color: #fff;
   margin-bottom: -0.5rem;
 }
@@ -34,6 +33,7 @@ h3 {
 
 .socials {
   margin-bottom: 1.5rem;
+  color: #fff;
 }
 
 a:hover {

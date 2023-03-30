@@ -15,19 +15,19 @@ export default function Footer() {
           <img src={footerLogo} alt="Footer-Logo" />
         </div>
         <div className={classes.footerContact}>
-          <h3>CONTACTt</h3>
+          <h3 className={classes.cont}>CONTACT</h3>
           <menu>
             <li>
-              <p>No 35 Jamaica steet, New York, USA</p>
+              <p className={classes.cont}>No 35 Jamaica steet, New York, USA</p>
             </li>
             <li>
-              <p>123-456-7890</p>
+              <p className={classes.cont}>123-456-7890</p>
               <a className={classes.anchor} href="tel:123-456-7890">
                 Give us a call
               </a>
             </li>
             <li>
-              <p>info@little-lemon.com</p>
+              <p className={classes.cont}>info@little-lemon.com</p>
               <a className={classes.anchor} href="malito:info@little-lemon.com">
                 Write us a mail
               </a>
