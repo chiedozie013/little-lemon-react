@@ -63,18 +63,21 @@ button:hover {
   justify-content: flex-end;
 }
 
-.imageContainer {
-  width: 1000%;
-}
 .heroImage img {
-  width: 80%;
+  width: 100%;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .imageContainer {
-  width: 100%;
-  max-width: 440px;
+  width: 80%;
+  max-width: 370px;
   position: absolute;
-  top: 10rem;
+  top: 9rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .imageContainer {
+    max-width: 250px;
+  }
 }
