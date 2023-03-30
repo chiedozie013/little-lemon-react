@@ -3,12 +3,17 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faOpencart } from "@fortawesome/free-brands-svg-icons";
 
-import classes from "./Specials.module.css";
+import classes from "./SpecialCards.module.css";
 
 export default function SpecialCards({ image, title, price, description }) {
   return (
     <article>
-      <div style={{ backgroundImage: `url(${image})` }}></div>
+      <div className={classes.cardImageContainer}>
+        <div
+          className={classes.cardImage}
+          style={{ backgroundImage: `url(${image})` }}
+        ></div>
+      </div>
       <div>
         <div>
           <h1>{title}</h1>

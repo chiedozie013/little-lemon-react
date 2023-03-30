@@ -1,9 +1,9 @@
 // import { Link } from "react-router-dom";
 
 import SpecialCards from "./SpecialCards";
-import Meal3 from "../../images/Lemon Dessert.png";
+import Meal3 from "../../images/Lemon-Dessert.png";
 import Meal2 from "../../images/Bruchetta.png";
-import Meal1 from "../../images/Greek Salad.png";
+import Meal1 from "../../images/Greek-Salad.png";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faOpencart } from "@fortawesome/free-brands-svg-icons";
 
