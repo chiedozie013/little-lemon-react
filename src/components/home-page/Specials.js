@@ -2,11 +2,11 @@ import Meal3 from "../../images/Lemon Dessert.png";
 import Meal2 from "../../images/Bruchetta.png";
 import Meal1 from "../../images/Greek Salad.png";
 
-import classes from "./Special.module.css";
+import classes from "./Specials.module.css";
 
 // a database fetched list of special dishes collected;
 
-const specialDishes = [
+const specialsDishes = [
   {
     id: "d1",
     image: Meal1,
@@ -32,3 +32,11 @@ const specialDishes = [
       "This comes straight from grandma's recipe book. Every last ingredient has been sourced and is as authentic as can be imagined.",
   },
 ];
+
+export default function Specials() {
+  return (
+    <section className={classes.specialsSection}>
+      <div></div>
+    </section>
+  );
+}
