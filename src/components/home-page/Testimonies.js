@@ -13,30 +13,30 @@ const testimonial = [
     id: "t1",
     image: User1,
     name: "Mark J.",
-    stars: 5,
-    Review: "I enjoy relaxing at the restaurant with the amazing Lemon Dessert",
+    rate: 5,
+    review: "I enjoy relaxing at the restaurant with the amazing Lemon Dessert",
   },
   {
     id: "t2",
     image: User2,
     name: "Julian G",
-    stars: 4,
-    Review:
+    rate: 4,
+    review:
       "The restaurant has become a second home to me anytime i am in Chicago",
   },
   {
     id: "t3",
     image: User3,
     name: "Fidelia O",
-    stars: 5,
-    Review: "Your meals always have i and my kids coming everytime..",
+    rate: 5,
+    review: "Your meals always have i and my kids coming everytime..",
   },
   {
     id: "t4",
     image: User4,
     name: "Chukwuemeka U",
-    stars: 3.5,
-    Review:
+    rate: 3.5,
+    review:
       "I love the greek salad and pizza. And you render an excellent service",
   },
 ];
@@ -54,7 +54,7 @@ export default function Testimonies() {
               key={item.id}
               image={item.image}
               name={item.name}
-              stars={item.stars}
+              rating={item.rate}
               review={item.review}
             />
           ))}
