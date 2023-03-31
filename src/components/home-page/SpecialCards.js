@@ -7,19 +7,19 @@ import classes from "./SpecialCards.module.css";
 
 export default function SpecialCards({ image, title, price, description }) {
   return (
-    <article>
+    <article className={classes.card}>
       <div className={classes.cardImageContainer}>
         <div
           className={classes.cardImage}
           style={{ backgroundImage: `url(${image})` }}
         ></div>
       </div>
-      <div>
+      <div className={classes.cardText}>
         <div>
-          <h1>{title}</h1>
+          <p>{title}</p>
           <span>${price}</span>
         </div>
-        <h1>{description}</h1>
+        <p>{description}</p>
         <div>
           <Link to="/">
             Order a delivery{" "}
