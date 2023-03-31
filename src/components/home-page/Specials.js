@@ -38,32 +38,6 @@ const specialsDishes = [
   },
 ];
 
-// function specialCards({ image, title, price, description }) {
-//   return (
-//     <article className={classes.card}>
-//       <div
-//         className={classes.cardImage}
-//         style={{ backgroundImage: `url(${image})` }}
-//       ></div>
-//       <div className={classes.cardText}>
-//         <div className={classes.cardTitle}>
-//           <p>{title}</p>
-//           <span>${price}</span>
-//         </div>
-//         <p className={classes.dishDescription}>{description}</p>
-//         <div className={classes.order}>
-//           <Link to="/">
-//             Order a delivery{" "}
-//             <span>
-//               {" "}
-//               <FontAwesomeIcon icon={faOpencart} style={{ color: "black" }} />
-//             </span>
-//           </Link>
-//         </div>
-//       </div>
-//     </article>
-//   );
-// }
 export default function Specials() {
   return (
     <section className={classes.specialsSection}>
