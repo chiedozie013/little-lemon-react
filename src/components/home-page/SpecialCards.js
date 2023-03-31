@@ -15,12 +15,12 @@ export default function SpecialCards({ image, title, price, description }) {
         ></div>
       </div>
       <div className={classes.cardText}>
-        <div>
+        <div className={classes.cardDishDetails}>
           <p>{title}</p>
           <span>${price}</span>
         </div>
         <p>{description}</p>
-        <div>
+        <div className={classes.cardOrder}>
           <Link to="/">
             Order a delivery{" "}
             <span>
