@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./TestimonyCard";
+import classes from "./TestimonyCard.module.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
@@ -11,15 +11,15 @@ function Rating({ ratingValue }) {
 
   const starIcons = [];
   for (let i = 0; i < fullStars; i++) {
-    starIcons.push(<FontAwesomeIcon icon={faStar} />);
+    starIcons.push(<FontAwesomeIcon icon={faStar} color="gold" />);
   }
 
   if (hasHalfStar) {
-    starIcons.push(<FontAwesomeIcon icon={faStarHalfAlt} />);
+    starIcons.push(<FontAwesomeIcon icon={faStarHalfAlt} color="gold" />);
   }
 
   while (starIcons.length < 5) {
-    starIcons.push(<FontAwesomeIcon icon={farStar} />);
+    starIcons.push(<FontAwesomeIcon icon={farStar} color="gold" />);
   }
 
   return <div>{starIcons}</div>;
@@ -27,15 +27,15 @@ function Rating({ ratingValue }) {
 
 export default function TestimonyCard({ image, name, rating, review }) {
   return (
-    <article>
-      <div>
-        <img src={image} alt="User" />
+    <article className={classes.testimonyCard}>
+      <div className={classes.userImageContainer}>
+        <img className={classes.userImage} src={image} alt="User" />
       </div>
-      <div>
+      <div className={classes.star}>
         <Rating ratingValue={rating} />
         <span>{rating}</span>
       </div>
-      <figure>
+      <figure className={classes.userReview}>
         <blockquote>{review}</blockquote>
         <figcaption>&mdash; {name}</figcaption>
       </figure>
