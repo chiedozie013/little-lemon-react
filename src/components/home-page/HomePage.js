@@ -4,6 +4,7 @@ import Footer from "../../components/layout/Footer";
 import HeroSection from "./HeroSection";
 import Specials from "./Specials";
 import Testimonies from "./Testimonies";
+import AboutUs from "./AboutUs";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <HeroSection />
       <Specials />
       <Testimonies />
+      <AboutUs />
       <Footer />
     </Fragment>
   );
