@@ -44,7 +44,7 @@ export default function AboutUs() {
           <div className={classes.foundersImage}>
             <div className={classes.leftImageContainer}>
               <div>
-                Mario
+                Adrian
                 <span>
                   <FontAwesomeIcon icon={faArrowRight} />
                 </span>
@@ -61,7 +61,7 @@ export default function AboutUs() {
                 <span>
                   <FontAwesomeIcon icon={faArrowLeft} />
                 </span>
-                Adrain
+                Mario
               </div>
             </div>
           </div>
