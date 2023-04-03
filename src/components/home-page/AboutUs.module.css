@@ -62,6 +62,7 @@
   font-size: var(--font-lead-text);
   gap: 0.5rem;
   padding: 1.5rem 0 1.5rem 25%;
+  font-weight: 700;
 }
 .leftImageContainer span {
   display: inline-flex;
@@ -115,6 +116,7 @@
   gap: 0.5rem;
   padding: 1.5rem 0 1.5rem 50%;
   font-size: var(--font-lead-text);
+  font-weight: 700;
 }
 
 .rightImageContainer span {

@@ -32,7 +32,7 @@ export default function AboutUs() {
               </p>
               <p>
                 Over the years, Little Lemon has continued to thrive and attract
-                food lovers from across the city and beyond. Maria and Michael
+                food lovers from across the city and beyond. Mario and Adrian
                 have expanded their menu and added new dishes to keep things
                 fresh, but they remain committed to their original vision of
                 using the freshest ingredients and the most creative cooking
