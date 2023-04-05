@@ -20,5 +20,25 @@
 
 .mainNavigation menu {
   display: flex;
+  flex-direction: column;
   gap: 1.5rem;
+}
+
+/* .mainNavigationOpen {
+  background-color: #eeecec;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 8rem;
+  transform: translateX(0);
+} */
+@media screen and (min-width: 1024px) {
+  .toggleButton {
+    display: none;
+  }
+
+  .mainNavigation menu {
+    flex-direction: row;
+  }
 }
