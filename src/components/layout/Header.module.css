@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   padding: 1rem 0;
 }
 
@@ -20,25 +21,57 @@
 
 .mainNavigation menu {
   display: flex;
-  flex-direction: column;
   gap: 1.5rem;
 }
 
-/* .mainNavigationOpen {
-  background-color: #eeecec;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  gap: 8rem;
-  transform: translateX(0);
-} */
-@media screen and (min-width: 1024px) {
-  .toggleButton {
-    display: none;
+.mainNavigation menu li {
+  font-weight: 800;
+}
+
+@media screen and (max-width: 1024px) {
+  .mainNavigation {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 60%;
+    right: 0;
+    z-index: var(--z-menu-overlay);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.3s;
+    font-family: var(--font-heading);
+    backdrop-filter: blur(200px);
+  }
+
+  .mainNavigationOpen {
+    transform: translateX(0);
   }
 
   .mainNavigation menu {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-left: -60%;
+  }
+
+  .mainNavigation a {
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+
+  .toggleButton {
+    position: relative;
+    z-index: var(--z-hamburger);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .toggleButton {
+    display: none;
   }
 }
