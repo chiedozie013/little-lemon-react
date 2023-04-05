@@ -32,7 +32,7 @@
   /* z-indexes */
   --z-header: 100;
   --z-menu-overlay: 120;
-  --z-hamburger: 150;
+  --z-toggleButton: 150;
 
   /* Colors */
   --color-primary-400: hsl(160, 13%, 38%);
