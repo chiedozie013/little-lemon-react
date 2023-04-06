@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
-import SuccessIcon from "../ui/icons/SuccessIcon";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+// import SuccessIcon from "../ui/icons/SuccessIcon";
 import ConfirmationImage from "../../images/form-confirmation.jpg";
 
 import classes from "./ConfirmedBooking.module.css";
@@ -9,7 +11,7 @@ export default function ConfirmedBooking({ makeNewReservation }) {
   return (
     <div className={classes.formConfirmation}>
       <div className={classes.confirmationMessage}>
-        <SuccessIcon />
+        <FontAwesomeIcon icon={faCheckCircle} />
         <p>You have successfully reserved a table!</p>
       </div>
       <div className={classes.confirmationImage}>

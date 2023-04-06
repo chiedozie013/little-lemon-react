@@ -4,6 +4,7 @@ import { fetchAPI } from "../../api/api";
 import useSubmit from "../../hooks/useSubmit";
 import { useAlertContext } from "../context/alert-context";
 import ReservationForm from "./ReservationForm";
+import ConfirmedBooking from "./ConfirmedBooking";
 import classes from "./BookingReservation.module.css";
 
 export const updateTimes = (state, action) => {
