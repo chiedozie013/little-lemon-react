@@ -27,7 +27,7 @@ export default function Header() {
           >
             <menu>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/Home-Page">Home</Link>
               </li>
               <li>
                 <Link to="/">About</Link>
