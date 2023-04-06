@@ -7,7 +7,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import classes from "./Header.module.css";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen((prevValue) => !prevValue);
@@ -26,22 +26,22 @@ export default function Header() {
             }`}
           >
             <menu>
-              <li onClick={toggleMenu}>
+              <li>
                 <Link to="/">Home</Link>
               </li>
-              <li onClick={toggleMenu}>
+              <li>
                 <Link to="/">About</Link>
               </li>
-              <li onClick={toggleMenu}>
+              <li>
                 <Link to="/">Menu</Link>
               </li>
-              <li onClick={toggleMenu}>
-                <Link to="/">Reservations</Link>
+              <li>
+                <Link to="/Reservation-Page">Reservations</Link>
               </li>
-              <li onClick={toggleMenu}>
+              <li>
                 <Link to="/">Order Online</Link>
               </li>
-              <li onClick={toggleMenu}>
+              <li>
                 <Link to="/">Login</Link>
               </li>
             </menu>
