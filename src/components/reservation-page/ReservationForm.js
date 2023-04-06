@@ -8,8 +8,9 @@ import {
   Select,
 } from "@chakra-ui/react";
 
-import WarningIcon from "../ui/icons/WarningIcon";
-import LoadingSpinner from "../ui/LoadingSpinner";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 import classes from "./BookingReservation.module.css";
 
@@ -69,7 +70,7 @@ export default function ReservationForm({
         <FormErrorMessage>
           {formik.errors.date && (
             <div className={classes.errorContent}>
-              <WarningIcon />
+              <FontAwesomeIcon icon={faExclamationTriangle} />
               {formik.errors.date}
             </div>
           )}
@@ -98,7 +99,7 @@ export default function ReservationForm({
         <FormErrorMessage>
           {formik.errors.time && (
             <div className={classes.errorContent}>
-              <WarningIcon />
+              <FontAwesomeIcon icon={faExclamationTriangle} />
               {formik.errors.time}
             </div>
           )}
@@ -129,7 +130,7 @@ export default function ReservationForm({
         <FormErrorMessage>
           {formik.errors.guests && (
             <div className={classes.errorContent}>
-              <WarningIcon />
+              <FontAwesomeIcon icon={faExclamationTriangle} />
               {formik.errors.guests}
             </div>
           )}
@@ -160,7 +161,7 @@ export default function ReservationForm({
         <FormErrorMessage>
           {formik.errors.occasion && (
             <div className={classes.errorContent}>
-              <WarningIcon />
+              <FontAwesomeIcon icon={faExclamationTriangle} />
               {formik.errors.occasion}
             </div>
           )}
@@ -171,7 +172,7 @@ export default function ReservationForm({
           {isLoading ? (
             <span style={{ display: "inline-flex", gap: "1rem" }}>
               Loading
-              <LoadingSpinner />
+              <FontAwesomeIcon icon={faSpinner} spin />
             </span>
           ) : (
             "Submit"
