@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
-import classes from "./BookingReservation.module.css";
+import classes from "./ReservationForm.module.css";
 
 export default function ReservationForm({
   availableTimes,

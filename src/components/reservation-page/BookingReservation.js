@@ -58,7 +58,7 @@ export default function BookingReservation() {
             <div className={classes.title}>Little Lemon</div>
             <div className={classes.subtitle}>Chicago</div>
           </div>
-          <div className={classes.formContainer}>
+          <div className={classes.reservationContainer}>
             <h3 className="sectionTitle">Make your reservations here...</h3>
             {isFormDisplayed ? (
               <ReservationForm
