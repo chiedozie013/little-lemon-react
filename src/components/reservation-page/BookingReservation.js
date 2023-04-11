@@ -22,7 +22,13 @@ export const initializeTimes = () => fetchAPI(new Date());
 
 export default function BookingReservation() {
   const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
-  const [occasions, setOccasions] = useState(["Birthday", "Anniversary"]);
+  const [occasions, setOccasions] = useState([
+    "Birthday",
+    "Anniversary",
+    "Engagement",
+    "Friends-Hangout",
+    "Others",
+  ]);
   const [isFormDisplayed, setIsFormDisplayed] = useState(true);
   const { isLoading, response, submitAPI } = useSubmit();
   const { onOpen } = useAlertContext();
@@ -46,7 +52,6 @@ export default function BookingReservation() {
   }, [response]);
 
   const updateTimesHandler = (e) => {
-    // console.log(e.target.value);
     dispatch({ type: "update-times", payload: e.target.value });
   };
 

@@ -1,7 +1,8 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
+// import SmoothScroll from "./components/SmoothScroll";
 import HomePage from "./components/home-page/HomePage";
-import ReservationPage from "./components/reservation-page/ReservationPage";
+import BookingPage from "./components/reservation-page/ReservationPage";
 import React from "react";
 
 function App() {
@@ -10,9 +11,10 @@ function App() {
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="/Home-Page" element={<HomePage />} />
-        <Route path="/Reservation-Page" element={<ReservationPage />} />
+        <Route path="/Reservation-Page" element={<BookingPage />} />
       </Routes>
     </Router>
+    // </SmoothScroll>
   );
 }
 export default App;
