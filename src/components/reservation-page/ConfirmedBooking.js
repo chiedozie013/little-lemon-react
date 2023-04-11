@@ -19,7 +19,7 @@ export default function ConfirmedBooking({ makeNewReservation }) {
       <div className={classes.confirmationActions}>
         <p>Useful links:</p>
         <div className={classes.actions}>
-          <Link to="/ReservationPage" onClick={() => makeNewReservation(true)}>
+          <Link to="/Reservation-Page" onClick={() => makeNewReservation(true)}>
             Make a new table reservation
           </Link>
           <Link to="/">Go to Home page</Link>
