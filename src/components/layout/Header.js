@@ -42,7 +42,7 @@ export default function Header() {
                 <Link to="/">Order Online</Link>
               </li>
               <li>
-                <Link to="/">Login</Link>
+                <Link to="/Sign-Up">Sign-Up</Link>
               </li>
             </menu>
           </nav>
