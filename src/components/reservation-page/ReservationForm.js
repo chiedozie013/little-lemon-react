@@ -56,6 +56,7 @@ export default function ReservationForm({
           Choose date
         </FormLabel>
         <Input
+          className={classes.input}
           id="date"
           name="date"
           type="date"
@@ -85,6 +86,7 @@ export default function ReservationForm({
           Choose time
         </FormLabel>
         <Select
+          className={classes.input}
           id="time"
           name="time"
           placeholder="Select an appropriate time"
@@ -115,6 +117,7 @@ export default function ReservationForm({
           Number of guests
         </FormLabel>
         <input
+          // className={classes.input}
           id="guests"
           name="guests"
           type="number"
@@ -147,6 +150,7 @@ export default function ReservationForm({
           Occasion
         </FormLabel>
         <Select
+          className={classes.input}
           id="occasion"
           name="occasion"
           placeholder="Select an occasion"
@@ -168,7 +172,12 @@ export default function ReservationForm({
         </FormErrorMessage>
       </FormControl>
       <div style={{ marginTop: "1.5rem" }}>
-        <button fullWidth={true} disabled={isLoading} isSubmit={true}>
+        <button
+          className={classes.submitButton}
+          fullWidth={true}
+          disabled={isLoading}
+          isSubmit={true}
+        >
           {isLoading ? (
             <span style={{ display: "inline-flex", gap: "1rem" }}>
               Loading
