@@ -49,7 +49,7 @@
   border-color: inherit;
   background: inherit;
   transition: all 0.3s;
-  padding: 0.7rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 0.3rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   border: none;
@@ -72,7 +72,7 @@
 }
 
 .input {
-  padding: 0.7rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 0.3rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   border: none;

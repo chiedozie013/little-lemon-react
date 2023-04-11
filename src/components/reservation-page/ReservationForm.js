@@ -45,6 +45,16 @@ export default function ReservationForm({
     }),
   });
 
+  // const getIsFormValid = () => {
+  //   // Implement this function
+  //   return (
+  // {formik.values.date} &&
+
+  //     date && time && guests
+  //     // occasion &&
+  //   );
+  // };
+
   return (
     <form onSubmit={formik.handleSubmit} className={classes.form}>
       <FormControl isInvalid={formik.touched.date && formik.errors.date}>
@@ -175,6 +185,7 @@ export default function ReservationForm({
         <button
           className={classes.submitButton}
           fullWidth={true}
+          // disabled={!getIsFormValid()}
           disabled={isLoading}
           isSubmit={true}
         >
