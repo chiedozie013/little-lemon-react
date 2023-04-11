@@ -18,6 +18,7 @@
   width: 100%;
   gap: 1rem;
   align-items: center;
+  color: #e53e3e;
 }
 
 .errorContent svg {
