@@ -1,12 +1,16 @@
 .form {
+  width: 50%;
   color: var(--color-primary-500);
   padding: 3rem 2rem;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   margin-top: -1rem;
+  background-color: var(--color-white);
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -76,13 +80,23 @@
   border-radius: 0.3rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   border: none;
+  width: 100%;
 }
 
 .submitButton {
   width: 100%;
+  /* grid-column: 1 / -1; */
+}
+
+.form > :last-of-type {
+  grid-column: 1 / -1;
 }
 
 ::placeholder {
   font-size: 0.85rem;
   color: #000000;
+}
+
+.formRadio {
+  margin-left: 6rem;
 }

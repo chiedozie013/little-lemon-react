@@ -12,6 +12,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
+import CustomerDetails from "../sign-up/SignUp";
+
 import classes from "./ReservationForm.module.css";
 
 export default function ReservationForm({
@@ -23,6 +25,8 @@ export default function ReservationForm({
 }) {
   const formik = useFormik({
     initialValues: {
+      indoor: "",
+      outdoor: "",
       date: "",
       time: "",
       guests: "",
@@ -57,6 +61,40 @@ export default function ReservationForm({
 
   return (
     <form onSubmit={formik.handleSubmit} className={classes.form}>
+      <FormControl>
+        <FormLabel
+          htmlFor="indoor"
+          fontWeight={600}
+          fontSize="var(--font-lead-text)"
+        >
+          Indoor Seating
+          <Input
+            type="radio"
+            id="indoor"
+            name="seating"
+            value="indoor"
+            checked="true"
+            className={classes.formRadio}
+          />
+        </FormLabel>
+      </FormControl>
+      <FormControl>
+        <FormLabel
+          htmlFor="outdoor"
+          fontWeight={600}
+          fontSize="var(--font-lead-text)"
+        >
+          Outdoor Seating
+          <Input
+            type="radio"
+            id="outdoor"
+            name="seating"
+            value="outdoor"
+            className={classes.formRadio}
+          />
+        </FormLabel>
+      </FormControl>
+
       <FormControl isInvalid={formik.touched.date && formik.errors.date}>
         <FormLabel
           htmlFor="date"
@@ -182,7 +220,7 @@ export default function ReservationForm({
         </FormErrorMessage>
       </FormControl>
       <div style={{ marginTop: "1.5rem" }}>
-        <button
+        {/* <button
           className={classes.submitButton}
           fullWidth={true}
           // disabled={!getIsFormValid()}
@@ -197,6 +235,9 @@ export default function ReservationForm({
           ) : (
             "Submit"
           )}
+        </button> */}
+        <button className={classes.submitButton} onClick={<CustomerDetails />}>
+          Submit
         </button>
       </div>
     </form>

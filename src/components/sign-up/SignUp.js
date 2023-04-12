@@ -82,10 +82,11 @@ export default function SignUp({ submitAPI }) {
     <section className={classes.signUpSection}>
       <div className={`fluidContainer ${classes.signUpPageContainer}`}>
         <div className="sectionTitle">
-          <h2>Sign Up</h2>
+          <h3>Sign Up</h3>
         </div>
         <form onSubmit={handleSubmit} className={classes.signUpDetails}>
           {/* <fieldset className={classes.signUpDetails}> */}
+
           <FormControl
             isInvalid={formik.touched.firstName && formik.errors.firstName}
             className={classes.field}

@@ -63,19 +63,21 @@ export default function BookingReservation() {
             <div className={classes.title}>Little Lemon</div>
             <div className={classes.subtitle}>Chicago</div>
           </div>
-          <div className={classes.reservationContainer}>
-            <h3 className="sectionTitle">Make your reservations here...</h3>
-            {isFormDisplayed ? (
-              <ReservationForm
-                availableTimes={availableTimes}
-                occasions={occasions}
-                updateTimes={updateTimesHandler}
-                isLoading={isLoading}
-                submitAPI={submitAPI}
-              />
-            ) : (
-              <ConfirmedBooking makeNewReservation={setIsFormDisplayed} />
-            )}
+          <div className={classes.subContainer}>
+            <div className={classes.reservationContainer}>
+              <h3 className="sectionTitle">Make your reservations here...</h3>
+              {isFormDisplayed ? (
+                <ReservationForm
+                  availableTimes={availableTimes}
+                  occasions={occasions}
+                  updateTimes={updateTimesHandler}
+                  isLoading={isLoading}
+                  submitAPI={submitAPI}
+                />
+              ) : (
+                <ConfirmedBooking makeNewReservation={setIsFormDisplayed} />
+              )}
+            </div>
           </div>
         </div>
       </section>

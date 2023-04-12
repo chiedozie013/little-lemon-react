@@ -31,5 +31,13 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
+}
+
+.subContainer {
+  background-color: var(--color-primary-500);
+  color: var(--color-white);
+  padding: 2rem 0 4rem 0;
+  width: 100wh;
 }
