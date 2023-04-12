@@ -66,6 +66,7 @@
 .formNumberInput:focus-visible,
 .input:focus-visible {
   z-index: 1;
+  border: none;
   /* border-color: #e1e512; */
   box-shadow: 0 0 0 3px #e1e512;
 }
