@@ -100,3 +100,7 @@
 .formRadio {
   margin-left: 6rem;
 }
+
+textarea {
+  margin-top: 0.5rem;
+}
