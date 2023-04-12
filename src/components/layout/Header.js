@@ -41,9 +41,6 @@ export default function Header() {
               <li>
                 <Link to="/">Order Online</Link>
               </li>
-              <li>
-                <Link to="/Sign-Up">Sign-Up</Link>
-              </li>
             </menu>
           </nav>
 
