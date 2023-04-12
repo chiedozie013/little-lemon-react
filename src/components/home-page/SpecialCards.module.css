@@ -36,16 +36,18 @@
 
 .cardText {
   padding: 1rem;
-  background-color: var(--color-light);
+  background-color: var(--color-light-600);
   flex: auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   transition: all 0.3s;
+  color: var(--color-accent-600);
 }
 
 .card:hover .cardText {
   background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 .cardDishDetails {

@@ -22,7 +22,7 @@ export const initializeTimes = () => fetchAPI(new Date());
 
 export default function BookingReservation() {
   const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
-  const [occasions, setOccasions] = useState([
+  const [occasions] = useState([
     "Birthday",
     "Anniversary",
     "Engagement",

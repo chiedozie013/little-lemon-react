@@ -54,7 +54,6 @@ export default function ReservationForm({
         .required("You have to provide at least 1 guest"),
       // test: Yup.string().required(),
       occasion: Yup.string().required("You have to pick an occasion"),
-      policy: Yup.string().required("You have to tick checkbox"),
     }),
   });
 
@@ -77,6 +76,7 @@ export default function ReservationForm({
           htmlFor="indoor"
           fontWeight={600}
           fontSize="var(--font-lead-text)"
+          className={classes.formRadio}
         >
           Indoor Seating
           <Input
@@ -85,7 +85,6 @@ export default function ReservationForm({
             name="seating"
             value="indoor"
             checked="true"
-            className={classes.formRadio}
           />
         </FormLabel>
       </FormControl>
@@ -94,15 +93,10 @@ export default function ReservationForm({
           htmlFor="outdoor"
           fontWeight={600}
           fontSize="var(--font-lead-text)"
+          className={classes.formRadio}
         >
           Outdoor Seating
-          <Input
-            type="radio"
-            id="outdoor"
-            name="seating"
-            value="outdoor"
-            className={classes.formRadio}
-          />
+          <Input type="radio" id="outdoor" name="seating" value="outdoor" />
         </FormLabel>
       </FormControl>
       <FormControl
@@ -202,7 +196,7 @@ export default function ReservationForm({
           name="number"
           type="tel"
           pattern="\+[0-9]{1,3}\s[0-9]{8,10}"
-          placeholder="+123 4567890"
+          placeholder="+012 3456789"
           {...formik.getFieldProps("number")}
         />
         <FormErrorMessage>

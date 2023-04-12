@@ -66,7 +66,7 @@
 .formNumberInput:focus-visible,
 .input:focus-visible {
   z-index: 1;
-  border-color: #e1e512;
+  /* border-color: #e1e512; */
   box-shadow: 0 0 0 3px #e1e512;
 }
 
@@ -89,13 +89,19 @@
 
 ::placeholder {
   font-size: 0.85rem;
-  color: #000000;
+  color: #a89b9b;
 }
 
 .formRadio {
-  margin-left: 6rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 textarea {
   margin-top: 0.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .form {
+    width: 70%;
+  }
 }

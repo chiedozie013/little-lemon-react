@@ -38,10 +38,10 @@
   --color-primary-400: hsl(160, 13%, 38%);
   --color-primary-500: #4a5e58;
   --color-primary-600: #3e514a;
-  --color-secondary-500: #ee9972;
+  --color-secondary-500: #e76e35;
   --color-accent-400: hsl(50, 91%, 62%);
   --color-accent-500: hsl(50, 91%, 52%);
-  --color-accent-600: hsl(50, 91%, 42%);
+  --color-accent-600: hsl(50, 88%, 25%);
   --color-light: hsl(150, 6%, 93%);
   --color-light-600: hsl(150, 6%, 83%);
   --color-dark: #333;
@@ -75,7 +75,7 @@ body {
   line-height: 1.5;
   font-family: var(--font-basic);
   font-size: var(--font-size-paragraph);
-  background-color: var(--color-white);
+  background-color: var(--color-light);
   color: var(--color-primary-600);
 }
 
