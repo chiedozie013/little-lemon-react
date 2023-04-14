@@ -21,7 +21,7 @@
 
 .mainNavigation menu {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .mainNavigation menu li {
@@ -80,4 +80,8 @@
     color: aqua;
     background-color: blue;
   }
+  /* .mainNavigation menu li {
+    padding: 1rem 0 1rem 2.5rem;
+    border-bottom: solid 0.3rem #f56d6d;
+  } */
 }

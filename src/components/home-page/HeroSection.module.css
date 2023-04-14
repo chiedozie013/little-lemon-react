@@ -81,3 +81,17 @@ button:hover {
     max-width: 250px;
   }
 }
+@media screen and (max-width: 768px) {
+  .imageContainer {
+    position: absolute;
+    top: 29rem;
+    max-width: 70%;
+  }
+  .heroImage {
+    display: flex;
+    justify-content: center;
+  }
+  .heroSection {
+    padding: 8rem 0 90% 0;
+  }
+}

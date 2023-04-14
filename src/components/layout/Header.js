@@ -27,27 +27,30 @@ export default function Header() {
           >
             <menu>
               <li>
-                <NavLink exact to="/Home-Page" activeClassName="active">
+                <NavLink exact to="/Home-Page" activeClassName={classes.active}>
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/" activeClassName="active">
+                <NavLink to="/" activeClassName={classes.active}>
                   About
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/" activeClassName="active">
+                <NavLink to="/Menu-Page" activeClassName={classes.active}>
                   Menu
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Reservation-Page" activeClassName="active">
+                <NavLink
+                  to="/Reservation-Page"
+                  activeClassName={classes.active}
+                >
                   Reservations
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/" activeClassName="active">
+                <NavLink to="/" activeClassName={classes.active}>
                   Order Online
                 </NavLink>
               </li>
