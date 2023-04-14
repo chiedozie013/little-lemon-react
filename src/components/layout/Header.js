@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React, { useState } from "react";
 import Logo from "../../images/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,19 +27,29 @@ export default function Header() {
           >
             <menu>
               <li>
-                <Link to="/Home-Page">Home</Link>
+                <NavLink exact to="/Home-Page" activeClassName="active">
+                  Home
+                </NavLink>
               </li>
               <li>
-                <Link to="/">About</Link>
+                <NavLink to="/" activeClassName="active">
+                  About
+                </NavLink>
               </li>
               <li>
-                <Link to="/">Menu</Link>
+                <NavLink to="/" activeClassName="active">
+                  Menu
+                </NavLink>
               </li>
               <li>
-                <Link to="/Reservation-Page">Reservations</Link>
+                <NavLink to="/Reservation-Page" activeClassName="active">
+                  Reservations
+                </NavLink>
               </li>
               <li>
-                <Link to="/">Order Online</Link>
+                <NavLink to="/" activeClassName="active">
+                  Order Online
+                </NavLink>
               </li>
             </menu>
           </nav>

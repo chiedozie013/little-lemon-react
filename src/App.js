@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Routes>
         <Route index element={<HomePage />} />
-        <Route path="/Home-Page" element={<HomePage />} />
+        <Route path="/Home-Page" index element={<HomePage />} />
         <Route path="/Reservation-Page" element={<BookingPage />} />
       </Routes>
     </Router>

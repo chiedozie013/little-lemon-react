@@ -28,6 +28,10 @@
   font-weight: 800;
   font-size: var(--font-size-big);
 }
+.active {
+  color: aqua;
+  background-color: blue;
+}
 
 @media screen and (max-width: 1024px) {
   .mainNavigation {
@@ -75,5 +79,9 @@
 @media screen and (min-width: 1024px) {
   .toggleButton {
     display: none;
+  }
+  .active {
+    color: aqua;
+    background-color: blue;
   }
 }
