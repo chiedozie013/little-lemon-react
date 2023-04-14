@@ -36,7 +36,7 @@ const testimonial = [
     id: "t4",
     image: User4,
     name: "Chukwuemeka U",
-    rate: 3.5,
+    rate: 3.8,
     review:
       "I love the greek salad and pizza. And you render an excellent service",
   },
