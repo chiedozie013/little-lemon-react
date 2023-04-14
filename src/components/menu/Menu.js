@@ -1,3 +1,5 @@
+import MenuCards from "./MenuCards";
+
 import Meal1 from "../../images/Bruchetta.png";
 import Meal2 from "../../images/Greek-Salad.png";
 import Meal3 from "../../images/Lemon-Dessert.png";
@@ -37,7 +39,7 @@ const menuDishes = [
     image: Meal3,
     title: "Lemon Dessert",
     price: 6.02,
-    rate: 4.3,
+    rate: 3.6,
     description: "Lemon Dessert with extra cheese",
   },
   {
@@ -45,7 +47,7 @@ const menuDishes = [
     image: Meal4,
     title: "French Pizza",
     price: 5.87,
-    rate: 4.3,
+    rate: 4.2,
     description: "Lemon Dessert with extra cheese",
   },
   {
@@ -53,7 +55,7 @@ const menuDishes = [
     image: Meal5,
     title: "Green Salad",
     price: 8.47,
-    rate: 4,
+    rate: 5,
     description: "Green Salad with white wine",
   },
   {
@@ -84,7 +86,7 @@ export default function Menu() {
                   image={dish.image}
                   title={dish.title}
                   price={dish.price}
-                  rate={dish.rate}
+                  rating={dish.rate}
                   description={dish.description}
                 />
               ))}

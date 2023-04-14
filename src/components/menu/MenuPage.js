@@ -4,6 +4,7 @@ import Footer from "../../components/layout/Footer";
 import SmoothScroll from "../SmoothScroll";
 import ToTopButton from "../../ui/ToTopButton";
 import Alert from "../../ui/Alert";
+import Menu from "./Menu";
 
 export default function MenuPage() {
   useEffect(() => {
@@ -13,6 +14,7 @@ export default function MenuPage() {
     <SmoothScroll>
       <Fragment>
         <Header />
+        <Menu />
         <Footer />
         <ToTopButton />
         <Alert />
