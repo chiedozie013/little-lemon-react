@@ -34,7 +34,7 @@ export default function BookingReservation() {
   const { onOpen } = useAlertContext();
 
   useEffect(() => {
-    document.title = "Table reservation | Little Lemon";
+    document.title = "Table Reservation | Little Lemon";
   }, []);
 
   useEffect(() => {

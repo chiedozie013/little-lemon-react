@@ -75,7 +75,7 @@ body {
   line-height: 1.5;
   font-family: var(--font-basic);
   font-size: var(--font-size-paragraph);
-  background-color: var(--color-light);
+  background-color: #fafaf9;
   color: var(--color-primary-600);
 }
 

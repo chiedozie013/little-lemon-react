@@ -26,7 +26,7 @@ const specialsDishes = [
     title: "Bruchetta",
     price: 5.89,
     description:
-      "Our Bruchetta is made from grilled bread that has ben smeared with garlic and seasoned with salt and olive oil.",
+      "Our Bruchetta is made from grilled bread that has ben smeared with garlic and seasoned with salt and olive oil. Delicious...",
   },
   {
     id: "d3",
