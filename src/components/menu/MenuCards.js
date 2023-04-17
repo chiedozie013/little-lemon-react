@@ -38,18 +38,18 @@ export default function MenuCards({
           className={classes.menuCardImage}
           style={{ backgroundImage: `url(${image})` }}
         ></div>
-        <div ClassName={classes.menuCardText}>
-          <div className={classes.menuCardDetails}>
-            <p>{title}</p>
-            <p>{description}</p>
-            <div className={classes.star}>
-              <Rating ratingValue={rating} />
-              <span>{rating}</span>
-            </div>
+      </div>
+      <div className={classes.menuCardText}>
+        <div className={classes.menuCardDetails}>
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <div className={classes.star}>
+            <Rating ratingValue={rating} />
+            <span>{rating}</span>
           </div>
-          <div className={classes.menuDishPrice}>
-            <p>{price}</p>
-          </div>
+        </div>
+        <div className={classes.menuDishPrice}>
+          <p>${price}</p>
         </div>
       </div>
     </article>
