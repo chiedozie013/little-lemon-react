@@ -1,5 +1,5 @@
 .menuCardImageContainer {
-  width: 30%;
+  width: 30rem;
   height: 230px;
   overflow: hidden;
   border-radius: 1rem;
@@ -18,6 +18,9 @@
 .cardMenu {
   display: flex;
   gap: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  padding-right: 1.5rem;
 }
 
 .menuCardText {
@@ -29,7 +32,7 @@
 
 .star {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   margin-top: -1rem;
 }
 
@@ -48,7 +51,7 @@
 .menuCardDetails {
   display: flex;
   flex-direction: column;
-  margin-top: -2.3rem;
+  margin-top: -2rem;
 }
 
 .menuCardDetails h2 {
